@@ -28,12 +28,18 @@ public class play {
 			p1.Attack();
 			p2.h=p2.h-p1.a[p1.b-1]-p1.c;
 			}
-	      		
+		else if(p1.b==2){
+			p1.Buildup();
+			}
+		
 		p2.Now();
 		p2.b=sc.nextInt();
 		if(p2.b==1){
 			p2.Attack();
 			p1.h=p1.h-p2.a[p2.b-1]-p2.c;
+			}
+		else if(p2.b==2){
+			p2.Buildup();
 			}
 		
 		p1.health();

@@ -7,6 +7,13 @@ public class Player extends Number {
 	Integer h=100;
 	Scanner sc = new Scanner(System.in);
 	
+        public void Buildup(){
+		System.out.println("숫자 1~5의 숫자를 쓰시오");
+		b=sc.nextInt();
+		randNum();
+		c=c+a[b-1];
+		System.out.println("+"+a[b-1]+"강화 성공");
+	}
 	public void Attack(){
 		System.out.println(name+"의 공격 숫자 1~5의 숫자를 쓰시오 ");
 		b=sc.nextInt();
